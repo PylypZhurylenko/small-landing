@@ -2,3 +2,15 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
+
+%background-gradient {
+  background: linear-gradient(0deg, rgb(50, 56, 56) 0%, rgb(39, 46, 40) 100%)
+    no-repeat;
+  background-position: center;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

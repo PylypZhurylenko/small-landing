@@ -1,0 +1,170 @@
+//::before {
+//   content: "01";
+//   // position: absolute;
+//   padding-top: 1rem;
+//   padding-left: 1rem;
+//   font-family: Chronicle-Roman;
+//   color: rgba(245, 245, 220, 0.185);
+//   font-size: 14rem;
+// }
+
+.main-section {
+  // border: 3px solid saddlebrown;
+  display: grid;
+  position: relative;
+  padding-top: 1300px;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 20px;
+  row-gap: 20px;
+
+  &__text-above {
+    font-size: 10px;
+    display: flex;
+    position: relative;
+    padding-left: 4rem;
+    letter-spacing: 2px;
+    font-family: Chronicle-Roman;
+    color: rgb(255, 189, 47);
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0.25rem;
+      left: 0;
+      height: 1px;
+      width: 3rem;
+      background-color: rgb(255, 189, 47);
+    }
+  }
+
+  &__item {
+    // background-color: beige;
+    // border: 3px solid rgb(14, 188, 211);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: beige;
+
+    &--text {
+      display: flex;
+      font-family: Chronicle-Roman;
+      font-size: 23px;
+    }
+    &--slogan01 {
+      position: relative;
+      padding-bottom: 40px;
+      font-family: Chronicle-Roman;
+      font-size: 50px;
+      @include big-number("01", -8rem, 3rem);
+    }
+    &--slogan02 {
+      position: relative;
+      padding-bottom: 40px;
+      font-family: Chronicle-Roman;
+      font-size: 50px;
+      @include big-number("02", -13rem, 3rem);
+    }
+    &--slogan03 {
+      position: relative;
+      padding-bottom: 40px;
+      font-family: Chronicle-Roman;
+      font-size: 50px;
+      @include big-number("03", -11rem, 2.5rem);
+    }
+    &--read-more {
+      padding-top: 10px;
+      color: rgb(255, 189, 47);
+      font-size: 10px;
+      font-family: Chronicle-Roman;
+      text-decoration: none;
+      letter-spacing: 2px;
+
+      &::after {
+        content: "\2192";
+        padding-left: 10px;
+      }
+    }
+
+    //text
+    &-1 {
+      grid-column-start: 3;
+      grid-column-end: 7;
+
+      // &::before {
+      //   content: "  \2015\2015\2015\2015    GET STARTED";
+      //   font-size: 10px;
+      //   display: flex;
+      //   letter-spacing: 2px;
+      //   font-family: Chronicle-Roman;
+      //   color: rgb(255, 189, 47);
+      // }
+    }
+    &-2 {
+      grid-column-start: 8;
+      grid-column-end: 11;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-3 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: left;
+    }
+    //text
+    &-4 {
+      grid-column-start: 8;
+      grid-column-end: 11;
+
+      // &::before {
+      //   content: "  \2015\2015\2015\2015    HIKING ESSENTIALS";
+      //   font-size: 10px;
+      //   display: flex;
+      //   letter-spacing: 2px;
+      //   font-family: Chronicle-Roman;
+      //   color: rgb(255, 189, 47);
+      // }
+    }
+    //text
+    &-5 {
+      grid-column-start: 3;
+      grid-column-end: 7;
+
+      // &::before {
+      //   content: "  \2015\2015\2015\2015    WHERE YOU GO IS THE KEY";
+      //   font-size: 10px;
+      //   display: flex;
+      //   letter-spacing: 2px;
+      //   font-family: Chronicle-Roman;
+      //   color: rgb(255, 189, 47);
+      // }
+    }
+    &-6 {
+      grid-column-start: 8;
+      grid-column-end: 11;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    &-7 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      padding-top: 20rem;
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+      // object-position: left;
+      &::after {
+        content: "Copyright 2019 MNTN, Inc. Terms & Privacy";
+
+        font-family: Chronicle-Roman;
+        padding-top: 7rem;
+        color: rgba(255, 255, 255, 0.295);
+      }
+    }
+  }
+}

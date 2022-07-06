@@ -4,3 +4,22 @@
     #{$_property}: $_toValue;
   }
 }
+
+@mixin background-image($image, $position-y) {
+  background-image: $image;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-y: $position-y;
+}
+
+@mixin big-number($content: "", $left: -8rem, $bottom: 0) {
+  &::before {
+    content: "#{$content}";
+    position: absolute;
+    bottom: $bottom;
+    left: $left;
+    font-family: Chronicle-Roman;
+    color: rgba(245, 245, 220, 0.185);
+    font-size: 14rem;
+  }
+} ;

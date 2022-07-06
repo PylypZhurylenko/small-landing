@@ -1,7 +1,32 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/extends";
+@import "./utils/mixins";
+@import "./utils/vars";
+@import "./utils/fonts";
+@import "./utils/media";
+@import "./blocks/header";
+@import "./blocks/slogan";
+@import "./blocks/main-section";
 
-body {
-  background: $c-gray;
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+// main {
+//   padding: 0 50px 100px 50px;
+// }
+.page-main {
+  border: 1px solid rgb(119, 0, 231);
+  background-image: url(../images/gradient.svg),
+    url(../images/background_mauntain.svg),
+    url(../images/background_mauntain2.svg),
+    url(../images/background_clouds.svg), url(../images/background-clouds2.svg),
+    url(../images/gradient.svg);
+  background-color: #0b1d26;
+  background-repeat: no-repeat;
+
+  background-position: left, left, left, left, left;
+  background-position-y: 1500px, 1100px, 600px, 0px, 0px, 1500px;
+  // background-size: contain, contain, contain, contain, contain;
+  min-width: 100vh;
+  min-height: 100vh;
 }
